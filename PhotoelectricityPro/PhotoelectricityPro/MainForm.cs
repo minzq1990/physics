@@ -17,6 +17,7 @@ namespace PhotoelectricityPro
             InitializeComponent();
             //hello lao da
             //hello xiaoqiang
+            //看到了吗？
         }
 
         private void button1_Click(object sender, EventArgs e)
