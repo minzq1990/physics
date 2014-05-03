@@ -65,10 +65,11 @@
             // 
             // mainButtStart
             // 
+            this.mainButtStart.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.mainButtStart.Location = new System.Drawing.Point(511, 26);
             this.mainButtStart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.mainButtStart.Name = "mainButtStart";
-            this.mainButtStart.Size = new System.Drawing.Size(37, 19);
+            this.mainButtStart.Size = new System.Drawing.Size(53, 29);
             this.mainButtStart.TabIndex = 1;
             this.mainButtStart.Text = "开始";
             this.mainButtStart.UseVisualStyleBackColor = true;
@@ -76,10 +77,11 @@
             // 
             // mainButtEnd
             // 
-            this.mainButtEnd.Location = new System.Drawing.Point(572, 26);
+            this.mainButtEnd.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.mainButtEnd.Location = new System.Drawing.Point(578, 29);
             this.mainButtEnd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.mainButtEnd.Name = "mainButtEnd";
-            this.mainButtEnd.Size = new System.Drawing.Size(37, 19);
+            this.mainButtEnd.Size = new System.Drawing.Size(65, 25);
             this.mainButtEnd.TabIndex = 1;
             this.mainButtEnd.Text = "结束";
             this.mainButtEnd.UseVisualStyleBackColor = true;
@@ -96,10 +98,11 @@
             // 
             // mainButtIntro
             // 
-            this.mainButtIntro.Location = new System.Drawing.Point(430, 26);
+            this.mainButtIntro.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.mainButtIntro.Location = new System.Drawing.Point(406, 26);
             this.mainButtIntro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.mainButtIntro.Name = "mainButtIntro";
-            this.mainButtIntro.Size = new System.Drawing.Size(62, 19);
+            this.mainButtIntro.Size = new System.Drawing.Size(86, 29);
             this.mainButtIntro.TabIndex = 3;
             this.mainButtIntro.Text = "试验说明";
             this.mainButtIntro.UseVisualStyleBackColor = true;
