@@ -54,5 +54,16 @@ namespace PhotoelectricityPro
             SYY sy = new SYY();
             sy.Show();
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click_1(object sender, EventArgs e)
+        {
+            DyBigForm dy = new DyBigForm();
+            dy.Show();
+        }
     }
 }

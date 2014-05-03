@@ -36,3 +36,4 @@ D:\git\Git\physics\PhotoelectricityPro\PhotoelectricityPro\obj\x86\Debug\Photoel
 D:\git\Git\physics\PhotoelectricityPro\PhotoelectricityPro\obj\x86\Debug\PhotoelectricityPro.SYY.resources
 D:\git\Git\physics\PhotoelectricityPro\PhotoelectricityPro\obj\x86\Debug\GenerateResource.read.1.tlog
 D:\git\Git\physics\PhotoelectricityPro\PhotoelectricityPro\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\git\Git\physics\PhotoelectricityPro\PhotoelectricityPro\obj\x86\Debug\PhotoelectricityPro.DyBigForm.resources

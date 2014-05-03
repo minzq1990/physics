@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DyBigForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DyBigForm.Designer.cs">
+      <DependentUpon>DyBigForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SYY.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +78,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DyBigForm.resx">
+      <DependentUpon>DyBigForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HomeForm.resx">
       <DependentUpon>HomeForm.cs</DependentUpon>
     </EmbeddedResource>
