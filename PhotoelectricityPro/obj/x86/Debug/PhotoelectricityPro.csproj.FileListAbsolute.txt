@@ -52,3 +52,16 @@ E:\physics\physics_one\physics\PhotoelectricityPro\PhotoelectricityPro\obj\x86\D
 E:\physics\physics_one\physics\PhotoelectricityPro\PhotoelectricityPro\obj\x86\Debug\PhotoelectricityPro.Filter.resources
 E:\physics\physics_one\physics\PhotoelectricityPro\obj\x86\Debug\PhotoelectricityPro.exe
 E:\physics\physics_one\physics\PhotoelectricityPro\obj\x86\Debug\PhotoelectricityPro.pdb
+E:\physics\physics_one\physics\physics\PhotoelectricityPro\obj\x86\Debug\PhotoelectricityPro.exe
+E:\physics\physics_one\physics\physics\PhotoelectricityPro\obj\x86\Debug\PhotoelectricityPro.pdb
+E:\physics\physics_one\physics\physics\PhotoelectricityPro\bin\Debug\PhotoelectricityPro.exe
+E:\physics\physics_one\physics\physics\PhotoelectricityPro\bin\Debug\PhotoelectricityPro.pdb
+E:\physics\physics_one\physics\physics\PhotoelectricityPro\obj\x86\Debug\PhotoelectricityPro.DyBigForm.resources
+E:\physics\physics_one\physics\physics\PhotoelectricityPro\obj\x86\Debug\PhotoelectricityPro.Filter.resources
+E:\physics\physics_one\physics\physics\PhotoelectricityPro\obj\x86\Debug\PhotoelectricityPro.homeForm.resources
+E:\physics\physics_one\physics\physics\PhotoelectricityPro\obj\x86\Debug\PhotoelectricityPro.instrucForm.resources
+E:\physics\physics_one\physics\physics\PhotoelectricityPro\obj\x86\Debug\PhotoelectricityPro.mainForm.resources
+E:\physics\physics_one\physics\physics\PhotoelectricityPro\obj\x86\Debug\PhotoelectricityPro.Properties.Resources.resources
+E:\physics\physics_one\physics\physics\PhotoelectricityPro\obj\x86\Debug\PhotoelectricityPro.SYY.resources
+E:\physics\physics_one\physics\physics\PhotoelectricityPro\obj\x86\Debug\PhotoelectricityPro.TestEquipment.resources
+E:\physics\physics_one\physics\physics\PhotoelectricityPro\obj\x86\Debug\PhotoelectricityPro.csproj.GenerateResource.Cache
