@@ -15,10 +15,6 @@ namespace PhotoelectricityPro
         public mainForm()
         {
             InitializeComponent();
-            //hello lao da
-            //hello xiaoqiang
-            //看到了吗？
-            //好了
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -63,6 +59,12 @@ namespace PhotoelectricityPro
         private void pictureBox3_Click_1(object sender, EventArgs e)
         {
             DyBigForm dy = new DyBigForm();
+            dy.Show();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            TestEquipment dy = new TestEquipment();
             dy.Show();
         }
     }

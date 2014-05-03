@@ -67,7 +67,7 @@
             // 
             this.mainButtStart.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.mainButtStart.Location = new System.Drawing.Point(511, 26);
-            this.mainButtStart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mainButtStart.Margin = new System.Windows.Forms.Padding(2);
             this.mainButtStart.Name = "mainButtStart";
             this.mainButtStart.Size = new System.Drawing.Size(53, 29);
             this.mainButtStart.TabIndex = 1;
@@ -79,7 +79,7 @@
             // 
             this.mainButtEnd.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.mainButtEnd.Location = new System.Drawing.Point(578, 29);
-            this.mainButtEnd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mainButtEnd.Margin = new System.Windows.Forms.Padding(2);
             this.mainButtEnd.Name = "mainButtEnd";
             this.mainButtEnd.Size = new System.Drawing.Size(65, 25);
             this.mainButtEnd.TabIndex = 1;
@@ -100,7 +100,7 @@
             // 
             this.mainButtIntro.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.mainButtIntro.Location = new System.Drawing.Point(406, 26);
-            this.mainButtIntro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mainButtIntro.Margin = new System.Windows.Forms.Padding(2);
             this.mainButtIntro.Name = "mainButtIntro";
             this.mainButtIntro.Size = new System.Drawing.Size(86, 29);
             this.mainButtIntro.TabIndex = 3;
@@ -112,7 +112,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(462, 344);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(204, 88);
             this.pictureBox1.TabIndex = 4;
@@ -121,19 +121,20 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(104, 89);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Image = global::PhotoelectricityPro.Properties.Resources.缩小的套装;
+            this.pictureBox2.Location = new System.Drawing.Point(256, 73);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(444, 165);
+            this.pictureBox2.Size = new System.Drawing.Size(236, 202);
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(11, 306);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Location = new System.Drawing.Point(11, 322);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(232, 147);
             this.pictureBox3.TabIndex = 6;
@@ -146,7 +147,7 @@
             this.MainLable1.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.MainLable1.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.MainLable1.ForeColor = System.Drawing.Color.Red;
-            this.MainLable1.Location = new System.Drawing.Point(48, 368);
+            this.MainLable1.Location = new System.Drawing.Point(48, 381);
             this.MainLable1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.MainLable1.Name = "MainLable1";
             this.MainLable1.Size = new System.Drawing.Size(58, 21);
@@ -184,7 +185,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 10F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(677, 480);
+            this.ClientSize = new System.Drawing.Size(773, 480);
             this.Controls.Add(this.MainLabel3);
             this.Controls.Add(this.MainLabel2);
             this.Controls.Add(this.MainLable1);
@@ -199,7 +200,7 @@
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Font = new System.Drawing.Font("宋体", 7.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.HelpButton = true;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "mainForm";
             this.ShowIcon = false;
