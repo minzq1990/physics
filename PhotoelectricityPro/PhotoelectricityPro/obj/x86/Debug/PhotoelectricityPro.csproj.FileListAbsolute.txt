@@ -26,3 +26,13 @@ E:\physics\physics_one\PhotoelectricityPro\PhotoelectricityPro\obj\x86\Debug\Pho
 E:\physics\physics_one\PhotoelectricityPro\PhotoelectricityPro\obj\x86\Debug\PhotoelectricityPro.pdb
 D:\git\Git\physics\PhotoelectricityPro\PhotoelectricityPro\obj\x86\Debug\PhotoelectricityPro.exe
 D:\git\Git\physics\PhotoelectricityPro\PhotoelectricityPro\obj\x86\Debug\PhotoelectricityPro.pdb
+D:\git\Git\physics\PhotoelectricityPro\PhotoelectricityPro\bin\Debug\PhotoelectricityPro.exe
+D:\git\Git\physics\PhotoelectricityPro\PhotoelectricityPro\bin\Debug\PhotoelectricityPro.pdb
+D:\git\Git\physics\PhotoelectricityPro\PhotoelectricityPro\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\git\Git\physics\PhotoelectricityPro\PhotoelectricityPro\obj\x86\Debug\PhotoelectricityPro.homeForm.resources
+D:\git\Git\physics\PhotoelectricityPro\PhotoelectricityPro\obj\x86\Debug\PhotoelectricityPro.instrucForm.resources
+D:\git\Git\physics\PhotoelectricityPro\PhotoelectricityPro\obj\x86\Debug\PhotoelectricityPro.mainForm.resources
+D:\git\Git\physics\PhotoelectricityPro\PhotoelectricityPro\obj\x86\Debug\PhotoelectricityPro.Properties.Resources.resources
+D:\git\Git\physics\PhotoelectricityPro\PhotoelectricityPro\obj\x86\Debug\PhotoelectricityPro.SYY.resources
+D:\git\Git\physics\PhotoelectricityPro\PhotoelectricityPro\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\git\Git\physics\PhotoelectricityPro\PhotoelectricityPro\obj\x86\Debug\GenerateResource.write.1.tlog
