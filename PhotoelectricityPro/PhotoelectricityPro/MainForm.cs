@@ -18,6 +18,7 @@ namespace PhotoelectricityPro
             //hello lao da
             //hello xiaoqiang
             //看到了吗？
+            //好了
         }
 
         private void button1_Click(object sender, EventArgs e)
