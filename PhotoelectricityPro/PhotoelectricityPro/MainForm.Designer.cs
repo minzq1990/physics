@@ -111,29 +111,28 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(462, 344);
+            this.pictureBox1.Location = new System.Drawing.Point(11, 362);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(204, 88);
+            this.pictureBox1.Size = new System.Drawing.Size(204, 79);
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::PhotoelectricityPro.Properties.Resources.缩小的套装;
-            this.pictureBox2.Location = new System.Drawing.Point(256, 73);
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(104, 89);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(236, 202);
+            this.pictureBox2.Size = new System.Drawing.Size(444, 165);
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(11, 322);
+            this.pictureBox3.Location = new System.Drawing.Point(434, 322);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(232, 147);
@@ -147,12 +146,13 @@
             this.MainLable1.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.MainLable1.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.MainLable1.ForeColor = System.Drawing.Color.Red;
-            this.MainLable1.Location = new System.Drawing.Point(48, 381);
+            this.MainLable1.Location = new System.Drawing.Point(468, 386);
             this.MainLable1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.MainLable1.Name = "MainLable1";
             this.MainLable1.Size = new System.Drawing.Size(58, 21);
             this.MainLable1.TabIndex = 7;
             this.MainLable1.Text = "0000";
+           
             // 
             // MainLabel2
             // 
@@ -160,12 +160,13 @@
             this.MainLabel2.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.MainLabel2.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.MainLabel2.ForeColor = System.Drawing.Color.Red;
-            this.MainLabel2.Location = new System.Drawing.Point(523, 381);
+            this.MainLabel2.Location = new System.Drawing.Point(67, 400);
             this.MainLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.MainLabel2.Name = "MainLabel2";
             this.MainLabel2.Size = new System.Drawing.Size(58, 21);
             this.MainLabel2.TabIndex = 8;
             this.MainLabel2.Text = "0000";
+            this.MainLabel2.Click += new System.EventHandler(this.MainLabel2_Click);
             // 
             // MainLabel3
             // 
@@ -173,7 +174,7 @@
             this.MainLabel3.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.MainLabel3.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.MainLabel3.ForeColor = System.Drawing.Color.Red;
-            this.MainLabel3.Location = new System.Drawing.Point(585, 381);
+            this.MainLabel3.Location = new System.Drawing.Point(143, 400);
             this.MainLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.MainLabel3.Name = "MainLabel3";
             this.MainLabel3.Size = new System.Drawing.Size(58, 21);
@@ -185,7 +186,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 10F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(773, 480);
+            this.ClientSize = new System.Drawing.Size(677, 480);
             this.Controls.Add(this.MainLabel3);
             this.Controls.Add(this.MainLabel2);
             this.Controls.Add(this.MainLable1);
@@ -228,7 +229,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label MainLable1;
-        private System.Windows.Forms.Label MainLabel2;
         private System.Windows.Forms.Label MainLabel3;
+        private System.Windows.Forms.Label MainLabel2;
     }
 }

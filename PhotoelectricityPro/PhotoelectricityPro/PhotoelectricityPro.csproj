@@ -52,18 +52,6 @@
     <Compile Include="DyBigForm.Designer.cs">
       <DependentUpon>DyBigForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Filter.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Filter.Designer.cs">
-      <DependentUpon>Filter.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TestEquipment.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TestEquipment.Designer.cs">
-      <DependentUpon>TestEquipment.cs</DependentUpon>
-    </Compile>
     <Compile Include="SYY.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,9 +81,6 @@
     <EmbeddedResource Include="DyBigForm.resx">
       <DependentUpon>DyBigForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Filter.resx">
-      <DependentUpon>Filter.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="HomeForm.resx">
       <DependentUpon>HomeForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -113,13 +98,9 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="SYY.resx">
       <DependentUpon>SYY.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TestEquipment.resx">
-      <DependentUpon>TestEquipment.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -130,31 +111,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="pic\13e59e0ce2db6b7500b5db4d0aaaee3f.jpeg" />
-    <Content Include="pic\13e59e0ce2db6b7500b5db4d0aaaee3f_副本.jpg" />
-    <Content Include="pic\13e59e0ce2db6b7500b5db4d0aaaee3f_副本_副本.jpg" />
-    <Content Include="pic\2257d00a69f9417915df468364b5fe78.jpg" />
-    <Content Include="pic\4dcf3a26cfcfcdb975919118a4e3e34e.jpg" />
-    <Content Include="pic\4dcf3a26cfcfcdb975919118a4e3e34e_副本_副本.jpg" />
-    <Content Include="pic\56798c28795f6063cab757d236568b30.jpg" />
-    <Content Include="pic\56798c28795f6063cab757d236568b30_副本_副本.jpg" />
-    <Content Include="pic\56798c28795f6063cab757d236568b30_副本_副本_副本.jpg" />
-    <Content Include="pic\88cb07dd911f437cbdd07b160c88edba.gif" />
-    <Content Include="pic\88cb07dd911f437cbdd07b160c88edba_副本.jpg" />
-    <Content Include="pic\88cb07dd911f437cbdd07b160c88edba_副本1.jpg" />
-    <Content Include="pic\93d235506d8b29354ff8e7220181079e.jpg" />
-    <Content Include="pic\94a33e205e2b64c2ca94e23d01a856df.jpg" />
-    <Content Include="pic\光电管入口遮光罩.jpg" />
-    <Content Include="pic\汞灯灯罩.jpg" />
-    <Content Include="pic\滤光片_1.jpg" />
-    <Content Include="pic\滤光片_2.jpg" />
-    <None Include="Resources\缩小的套装.jpg" />
-    <None Include="Resources\滤光片_2.jpg" />
-    <None Include="Resources\光电管入口遮光罩.jpg" />
-    <None Include="Resources\汞灯灯罩.jpg" />
-    <None Include="Resources\放大的套装.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

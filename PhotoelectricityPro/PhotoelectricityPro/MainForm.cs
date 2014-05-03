@@ -12,9 +12,17 @@ namespace PhotoelectricityPro
 {
     public partial class mainForm : Form
     {
+        private SYY syy = null;
+        DyBigForm dy = null ;
         public mainForm()
         {
             InitializeComponent();
+            syy = new SYY(this);
+            dy = new DyBigForm(this);
+            //hello lao da
+            //hello xiaoqiang
+            //看到了吗？
+            //好了
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -42,13 +50,46 @@ namespace PhotoelectricityPro
 
         private void mainForm_Load(object sender, EventArgs e)
         {
-
+            this.setMainLabel2(0);
+            this.setMainLabel1(0);
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        //设置主页面 电压值
+        public void setMainLabel2(int k)
         {
-            SYY sy = new SYY();
-            sy.Show();
+            
+            if (k < 10)
+            {
+                this.MainLabel2.Text = "000" + k.ToString();
+                 
+            }
+            else
+            {
+                this.MainLabel2.Text = "00" + k.ToString();
+                 
+            }
+            //this.MainLabel2.Text = k.ToString();
+        }
+
+        public void setMainLabel1(int k) {
+
+            if (k < 10)
+            {
+
+                this.MainLable1.Text = "000" + k.ToString();
+
+            }
+            else
+            {
+                this.MainLable1.Text = "00" + k.ToString();
+
+            }
+        }
+
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {  
+            syy.ShowDialog(); 
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -58,14 +99,15 @@ namespace PhotoelectricityPro
 
         private void pictureBox3_Click_1(object sender, EventArgs e)
         {
-            DyBigForm dy = new DyBigForm();
-            dy.Show();
+            
+            dy.ShowDialog();
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void MainLabel2_Click(object sender, EventArgs e)
         {
-            TestEquipment dy = new TestEquipment();
-            dy.Show();
+
         }
+
+         
     }
 }
