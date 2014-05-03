@@ -15,6 +15,7 @@ namespace PhotoelectricityPro
         public mainForm()
         {
             InitializeComponent();
+            //hello lao da
         }
 
         private void button1_Click(object sender, EventArgs e)
