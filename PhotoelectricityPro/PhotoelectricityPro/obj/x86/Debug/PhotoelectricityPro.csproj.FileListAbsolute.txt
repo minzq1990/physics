@@ -24,3 +24,5 @@ C:\Users\Sky\Desktop\PhotoelectricityPro\PhotoelectricityPro\obj\x86\Debug\Gener
 C:\Users\Sky\Desktop\PhotoelectricityPro\PhotoelectricityPro\obj\x86\Debug\GenerateResource.write.1.tlog
 E:\physics\physics_one\PhotoelectricityPro\PhotoelectricityPro\obj\x86\Debug\PhotoelectricityPro.exe
 E:\physics\physics_one\PhotoelectricityPro\PhotoelectricityPro\obj\x86\Debug\PhotoelectricityPro.pdb
+D:\git\Git\physics\PhotoelectricityPro\PhotoelectricityPro\obj\x86\Debug\PhotoelectricityPro.exe
+D:\git\Git\physics\PhotoelectricityPro\PhotoelectricityPro\obj\x86\Debug\PhotoelectricityPro.pdb
