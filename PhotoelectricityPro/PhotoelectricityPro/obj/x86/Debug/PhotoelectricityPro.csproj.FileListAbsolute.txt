@@ -22,3 +22,5 @@ C:\Users\Sky\Desktop\PhotoelectricityPro\PhotoelectricityPro\obj\x86\Debug\Photo
 C:\Users\Sky\Desktop\PhotoelectricityPro\PhotoelectricityPro\obj\x86\Debug\PhotoelectricityPro.SYY.resources
 C:\Users\Sky\Desktop\PhotoelectricityPro\PhotoelectricityPro\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Users\Sky\Desktop\PhotoelectricityPro\PhotoelectricityPro\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\physics\physics_one\PhotoelectricityPro\PhotoelectricityPro\obj\x86\Debug\PhotoelectricityPro.exe
+E:\physics\physics_one\PhotoelectricityPro\PhotoelectricityPro\obj\x86\Debug\PhotoelectricityPro.pdb
