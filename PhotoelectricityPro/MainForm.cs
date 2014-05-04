@@ -158,7 +158,7 @@ namespace PhotoelectricityPro
                 MessageBox.Show("请点击试验仪选择实验模式");
                 return;
             }
-            te.Show();
+            te.ShowDialog(); 
         }
 
         private void pictureBox2_MouseDown(object sender, MouseEventArgs e)

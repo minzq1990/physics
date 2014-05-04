@@ -25,25 +25,35 @@ namespace PhotoelectricityPro
         //点击测量仪大图电压的+号
         private void SyyLableJia_Click(object sender, EventArgs e)
         {
+            if (this.mf.modelFlag == -1)
+            {
+                MessageBox.Show("请先选择实验模式");
+                return;
+            }
             double u = Convert.ToDouble(this.label1.Text);
             u = u * 1000;
             u = u + 1;
             u = u / 1000;
             this.label1.Text = u.ToString();
+            mf.setMainLabel2(u.ToString());
             this.ModifyANum(1);
-            mf.setMainLabel2(u.ToString()); 
         }
 
         //点击测量仪大图电压的-号
         private void SyyLabeJian_Click(object sender, EventArgs e)
         {
+            if (this.mf.modelFlag == -1)
+            {
+                MessageBox.Show("请先选择实验模式");
+                return;
+            }
             double u = Convert.ToDouble(this.label1.Text);
             u = u * 1000;
             u = u - 1;
             u = u / 1000;
-            this.label1.Text = u.ToString();  //试验仪的电压值
-            this.ModifyANum(0);
+            this.label1.Text = u.ToString();  //试验仪的电压值          
             mf.setMainLabel2(u.ToString()); // 
+            this.ModifyANum(0);
         }
 
         //电流表的示数处理
@@ -156,12 +166,15 @@ namespace PhotoelectricityPro
             this.flag = 0; //手动模式
             this.mf.setModeFlag(this.flag);
             this.SelecShouAndZiButtonColor(flag);
+            this.Close();
         }
         //自动模式
         private void SyyBuZi_Click(object sender, EventArgs e)
         {
             this.flag = 1; //自动模式
-            this.SelecShouAndZiButtonColor(flag);
+            this.mf.setModeFlag(this.flag);
+            this.SelecShouAndZiButtonColor(flag); //设置该按钮的颜色
+            this.Close();
         }
 
         //选择手动和自动的 按钮字体的颜色
