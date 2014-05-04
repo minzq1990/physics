@@ -12,10 +12,13 @@ namespace PhotoelectricityPro
     public partial class TestEquipment : Form
     {
         private Timer time = new Timer();
-
-        public TestEquipment()
+        public mainForm mf = null; //主窗口
+        public Filter filter = null; //滤光片
+        public TestEquipment(mainForm mf)
         {
             InitializeComponent();
+            this.mf = mf; //主窗口
+            this.filter = new Filter(this.mf);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -46,7 +49,7 @@ namespace PhotoelectricityPro
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Filter filter = new Filter();
+            
             filter.Show();
         }
 

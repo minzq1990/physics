@@ -14,60 +14,116 @@ namespace PhotoelectricityPro
     {
         public mainForm mf;
         public static int K = 0;
+        public int flag = -1; //0：手动模式;1自动模式 ;-1初始化
         public SYY(mainForm mf)
         {
             InitializeComponent();
             this.mf = mf;
         }
 
-        private void SYY_Load(object sender, EventArgs e)
-        {
 
-        }
-
+        //点击测量仪大图电压的+号
         private void SyyLableJia_Click(object sender, EventArgs e)
         {
-            int i = Convert.ToInt32(this.label1.Text);
-            int k = i + 1;
-            SYY.K = k;
-            if (k < 10)
+            double u = Convert.ToDouble(this.label1.Text);
+            u = u * 1000;
+            u = u + 1;
+            u = u / 1000;
+            this.label1.Text = u.ToString();
+            this.ModifyANum(1);
+            mf.setMainLabel2(u.ToString()); 
+        }
+
+        //点击测量仪大图电压的-号
+        private void SyyLabeJian_Click(object sender, EventArgs e)
+        {
+            double u = Convert.ToDouble(this.label1.Text);
+            u = u * 1000;
+            u = u - 1;
+            u = u / 1000;
+            this.label1.Text = u.ToString();  //试验仪的电压值
+            this.ModifyANum(0);
+            mf.setMainLabel2(u.ToString()); // 
+        }
+
+        //电流表的示数处理
+        private void ModifyANum(int jiaOrJian) {
+           // MessageBox.Show(Convert.ToString(this.mf.trueU));
+            string isTrueU = (((this.mf.trueU) * 1000 - 5) / 1000).ToString();
+            string l2 = "0";
+            l2 = this.SyyLabe2.Text;
+            double l22 = Convert.ToDouble(l2);
+            
+            if (l22 != 0)
             {
-                this.label1.Text = "000" + k.ToString();
+                l22 = l22 * 1000;
             }
-            else
-            {
-                this.label1.Text = "00" + k.ToString();
+            else {
+
+                this.label1.Text = isTrueU;
+                this.mf.setMainLabel2 (isTrueU); //电压表
+                this.mf.setMainLablel3("0.000");
+                MessageBox.Show("电流表已经调到零A");
+                return;
+            }
+            
+           // MessageBox.Show(isTrueU);
+            if (jiaOrJian == 1) { //按加的按钮调用的该函数  
+                l22 = l22 + (l22 / 5);
+                if (l22 > 999)
+                {
+                    l22 = 999;
+                }
+                l22 = l22 / 1000;
+               
+                if (isTrueU == this.label1.Text)
+                {
+                    this.label1.Text = isTrueU;
+                    this.SyyLabe2.Text = "0.000";
+                    this.mf.setMainLabel2(isTrueU);
+                    this.mf.setMainLablel3("0.000");
+                }
+                else
+                {
+                    this.SyyLabe2.Text = l22.ToString("f3");
+                    this.mf.setMainLablel3(l22.ToString("f3")); 
+                }
             }
 
-            mf.setMainLabel2(k);
+            if (jiaOrJian == 0) //按加的按钮调用的该函数 
+            {    
+                l22 = l22 - (l22 / 5);
+                if (l22 > 999)
+                {
+                    l22 = 999;
+                }
+                l22 = l22 / 1000;
 
+                if (isTrueU == this.label1.Text)
+                {
+                    this.label1.Text = isTrueU;
+                    this.SyyLabe2.Text = "0.000";
+                    this.mf.setMainLabel2(isTrueU);
+                    this.mf.setMainLablel3("0.000");
+                }else{
+                    this.SyyLabe2.Text = l22.ToString("f3");
+                    this.mf.setMainLablel3(l22.ToString("f3"));
+                }
+                
+            }
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
 
         }
+        
+     
 
-        private void SyyLabeJian_Click(object sender, EventArgs e)
-        {
-            int i = Convert.ToInt32(this.label1.Text);
-            int k = i - 1;
-            SYY.K = k;
-            if (k < 0)
-            {
-                k = 0;
-            }
-            if (k < 10)
-            {
-                this.label1.Text = "000" + k.ToString();
-            }
-            else
-            {
-                this.label1.Text = "00" + k.ToString();
-            }
-            mf.setMainLabel2(k); //  
-
-
+        public void setDataFromMainForm(string u,string a) {
+            this.label1.Text = u;
+            this.SyyLabe2.Text = a;
         }
 
         private void SyyLableJia_MouseDown(object sender, MouseEventArgs e)
@@ -91,6 +147,43 @@ namespace PhotoelectricityPro
         {
 
         }
+
+        //手动模式
+        private void SyyBuShou_Click(object sender, EventArgs e)
+        {
+            this.flag = 0; //手动模式
+            this.mf.setModeFlag(this.flag);
+            this.SelecShouAndZiButtonColor(flag);
+        }
+        //自动模式
+        private void SyyBuZi_Click(object sender, EventArgs e)
+        {
+            this.flag = 1; //自动模式
+            this.SelecShouAndZiButtonColor(flag);
+        }
+
+        //选择手动和自动的 按钮字体的颜色
+        private void SelecShouAndZiButtonColor(int flag) {
+            if (flag == 0) //手动模式
+            {
+                this.SyyBuShou.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+                this.SyyBuZi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+                MessageBox.Show("手动模式已选定");
+            }
+            if (flag == 1) //自动模式
+            {
+                this.SyyBuShou.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+                this.SyyBuZi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+                MessageBox.Show("自动模式已选定");
+            }        
+        }
+
+        private void SYY_Load(object sender, EventArgs e)
+        {
+
+        }
+
+       
 
 
     }

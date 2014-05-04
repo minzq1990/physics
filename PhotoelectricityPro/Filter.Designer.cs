@@ -29,91 +29,96 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Filter));
-            this.filter_365 = new System.Windows.Forms.PictureBox();
-            this.filter_405 = new System.Windows.Forms.PictureBox();
-            this.filter_436 = new System.Windows.Forms.PictureBox();
-            this.filter_546 = new System.Windows.Forms.PictureBox();
-            this.filter_577 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.filter_365)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.filter_405)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.filter_436)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.filter_546)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.filter_577)).BeginInit();
+            this.pic1 = new System.Windows.Forms.PictureBox();
+            this.pic2 = new System.Windows.Forms.PictureBox();
+            this.pic3 = new System.Windows.Forms.PictureBox();
+            this.pic4 = new System.Windows.Forms.PictureBox();
+            this.pic5 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pic1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic5)).BeginInit();
             this.SuspendLayout();
             // 
-            // filter_365
+            // pic1
             // 
-            this.filter_365.Image = ((System.Drawing.Image)(resources.GetObject("filter_365.Image")));
-            this.filter_365.Location = new System.Drawing.Point(41, 28);
-            this.filter_365.Name = "filter_365";
-            this.filter_365.Size = new System.Drawing.Size(101, 87);
-            this.filter_365.TabIndex = 0;
-            this.filter_365.TabStop = false;
-            this.filter_365.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pic1.Image = ((System.Drawing.Image)(resources.GetObject("pic1.Image")));
+            this.pic1.Location = new System.Drawing.Point(41, 28);
+            this.pic1.Name = "pic1";
+            this.pic1.Size = new System.Drawing.Size(101, 87);
+            this.pic1.TabIndex = 0;
+            this.pic1.TabStop = false;
+            this.pic1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // filter_405
+            // pic2
             // 
-            this.filter_405.Image = ((System.Drawing.Image)(resources.GetObject("filter_405.Image")));
-            this.filter_405.Location = new System.Drawing.Point(200, 28);
-            this.filter_405.Name = "filter_405";
-            this.filter_405.Size = new System.Drawing.Size(100, 87);
-            this.filter_405.TabIndex = 1;
-            this.filter_405.TabStop = false;
+            this.pic2.Image = ((System.Drawing.Image)(resources.GetObject("pic2.Image")));
+            this.pic2.Location = new System.Drawing.Point(200, 28);
+            this.pic2.Name = "pic2";
+            this.pic2.Size = new System.Drawing.Size(100, 87);
+            this.pic2.TabIndex = 1;
+            this.pic2.TabStop = false;
+            this.pic2.Click += new System.EventHandler(this.pic2_Click);
             // 
-            // filter_436
+            // pic3
             // 
-            this.filter_436.Image = ((System.Drawing.Image)(resources.GetObject("filter_436.Image")));
-            this.filter_436.Location = new System.Drawing.Point(350, 34);
-            this.filter_436.Name = "filter_436";
-            this.filter_436.Size = new System.Drawing.Size(100, 81);
-            this.filter_436.TabIndex = 2;
-            this.filter_436.TabStop = false;
+            this.pic3.Image = ((System.Drawing.Image)(resources.GetObject("pic3.Image")));
+            this.pic3.Location = new System.Drawing.Point(350, 34);
+            this.pic3.Name = "pic3";
+            this.pic3.Size = new System.Drawing.Size(100, 81);
+            this.pic3.TabIndex = 2;
+            this.pic3.TabStop = false;
+            this.pic3.Click += new System.EventHandler(this.pic3_Click);
             // 
-            // filter_546
+            // pic4
             // 
-            this.filter_546.Image = ((System.Drawing.Image)(resources.GetObject("filter_546.Image")));
-            this.filter_546.Location = new System.Drawing.Point(42, 182);
-            this.filter_546.Name = "filter_546";
-            this.filter_546.Size = new System.Drawing.Size(100, 89);
-            this.filter_546.TabIndex = 3;
-            this.filter_546.TabStop = false;
+            this.pic4.Image = ((System.Drawing.Image)(resources.GetObject("pic4.Image")));
+            this.pic4.Location = new System.Drawing.Point(42, 182);
+            this.pic4.Name = "pic4";
+            this.pic4.Size = new System.Drawing.Size(100, 89);
+            this.pic4.TabIndex = 3;
+            this.pic4.TabStop = false;
+            this.pic4.Click += new System.EventHandler(this.pic4_Click);
             // 
-            // filter_577
+            // pic5
             // 
-            this.filter_577.Image = ((System.Drawing.Image)(resources.GetObject("filter_577.Image")));
-            this.filter_577.Location = new System.Drawing.Point(200, 182);
-            this.filter_577.Name = "filter_577";
-            this.filter_577.Size = new System.Drawing.Size(100, 89);
-            this.filter_577.TabIndex = 4;
-            this.filter_577.TabStop = false;
+            this.pic5.Image = ((System.Drawing.Image)(resources.GetObject("pic5.Image")));
+            this.pic5.Location = new System.Drawing.Point(200, 182);
+            this.pic5.Name = "pic5";
+            this.pic5.Size = new System.Drawing.Size(100, 89);
+            this.pic5.TabIndex = 4;
+            this.pic5.TabStop = false;
+            this.pic5.Click += new System.EventHandler(this.pic5_Click);
             // 
             // Filter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 362);
-            this.Controls.Add(this.filter_577);
-            this.Controls.Add(this.filter_546);
-            this.Controls.Add(this.filter_436);
-            this.Controls.Add(this.filter_405);
-            this.Controls.Add(this.filter_365);
+            this.Controls.Add(this.pic5);
+            this.Controls.Add(this.pic4);
+            this.Controls.Add(this.pic3);
+            this.Controls.Add(this.pic2);
+            this.Controls.Add(this.pic1);
             this.Name = "Filter";
             this.Text = "滤光片";
-            ((System.ComponentModel.ISupportInitialize)(this.filter_365)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.filter_405)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.filter_436)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.filter_546)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.filter_577)).EndInit();
+            this.Load += new System.EventHandler(this.Filter_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pic1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic5)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox filter_365;
-        private System.Windows.Forms.PictureBox filter_405;
-        private System.Windows.Forms.PictureBox filter_436;
-        private System.Windows.Forms.PictureBox filter_546;
-        private System.Windows.Forms.PictureBox filter_577;
+        private System.Windows.Forms.PictureBox pic1;
+        private System.Windows.Forms.PictureBox pic2;
+        private System.Windows.Forms.PictureBox pic3;
+        private System.Windows.Forms.PictureBox pic4;
+        private System.Windows.Forms.PictureBox pic5;
     }
 }

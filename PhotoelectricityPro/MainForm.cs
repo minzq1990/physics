@@ -12,13 +12,30 @@ namespace PhotoelectricityPro
 {
     public partial class mainForm : Form
     {
-        private SYY syy = null;
-        DyBigForm dy = null;
+        public SYY syy = null;  //试验仪
+        public DyBigForm dy = null; //电源大图
+        public Filter fi = null; //滤光片大图
+        public double trueU = 0;
+        public TestEquipment te = null;//测试仪器大图
+        
+        
+        public double[,] inputUAndV = new Double[5, 5] {  //截止频率与入射光波频率关系
+                                        //波长  频率    截止电压（手动）  截止电压（自动）         电流（自己瞎填写的）
+                                        {365,   8.214,  1.824 + 0.005,          1.822 + 0.005,                  0.921},
+                                        {405,   7.408,  1.451 + 0.005,          1.451 + 0.005,                  0.875},
+                                        {436,   6.879,  1.232 + 0.005,          1.231 + 0.005,                  0.801},
+                                        {546,   5.491,  0.682 + 0.005,          0.677 + 0.005,                  0.459},
+                                        {577,   5.196,  0.524 + 0.005,          0.520 + 0.005,                  0.314}
+                                    };
+        public string DYNumber = ""; //电源的示数
+        public int modelFlag = -1 ; //实验的模式
         public mainForm()
         {
             InitializeComponent();
-            syy = new SYY(this);
-            dy = new DyBigForm(this);
+            syy = new SYY(this); //试验仪的初始化
+            dy = new DyBigForm(this); //电源大图的初始化
+            fi = new Filter(this); //滤光片大图
+            te = new TestEquipment(this); //实验仪器大图
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -46,25 +63,22 @@ namespace PhotoelectricityPro
 
         private void mainForm_Load(object sender, EventArgs e)
         {
-            this.setMainLabel2(0);
+            //表的示数显示
+            this.setMainLabel2("0.000");
             this.setMainLabel1(0);
+            //给变量 电源值赋值
+            this.DYNumber = this.MainLable1.Text;
+           
         }
 
-        //设置主页面 电压值
-        public void setMainLabel2(int k)
+        //设置主页面 试验仪的电压值
+        public void setMainLabel2(string k)
         {
+                this.MainLabel2.Text =   k;
+        }
 
-            if (k < 10)
-            {
-                this.MainLabel2.Text = "000" + k.ToString();
-
-            }
-            else
-            {
-                this.MainLabel2.Text = "00" + k.ToString();
-
-            }
-            //this.MainLabel2.Text = k.ToString();
+        public void setMainLablel3(string k) {
+            this.MainLabel3.Text = k;
         }
 
         public void setMainLabel1(int k)
@@ -74,17 +88,26 @@ namespace PhotoelectricityPro
             {
 
                 this.MainLable1.Text = "000" + k.ToString();
-
+                this.DYNumber = "000" + k.ToString();
             }
             else
             {
                 this.MainLable1.Text = "00" + k.ToString();
-
+                this.DYNumber = "00" + k.ToString();
             }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            if (Convert.ToInt32(this.DYNumber) == 0) {
+                MessageBox.Show("请先接通电源，建议电源5V");
+                return;
+            }
+            if (Convert.ToInt32(this.DYNumber) < 5 )
+            {
+                MessageBox.Show("电源应不低于5V");
+                return;
+            }
             syy.ShowDialog(); 
         }
 
@@ -100,8 +123,29 @@ namespace PhotoelectricityPro
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            TestEquipment dy = new TestEquipment();
-            dy.Show();
+            if (this.modelFlag == -1) {
+                MessageBox.Show("请点击试验仪选择实验模式");
+                return;
+            }
+            te.Show();
+        }
+
+        //实验模式赋值
+        public void setModeFlag(int flag) {
+            this.modelFlag = flag;
+        }
+
+        //选择完滤光片之后 获得图片的索引值
+        public void getPicIndexMainForm(int picIndex) 
+        {
+            //MessageBox.Show(picIndex.ToString());
+            //this.MainLabel2.Text = picIndex.ToString();
+            double u = this.inputUAndV[picIndex - 1,2];
+            double a = this.inputUAndV[picIndex-1,4];
+            this.trueU = u; 
+            this.MainLabel2.Text = u.ToString(); //主窗口显示电压值
+            this.MainLabel3.Text = a.ToString();//主窗口显示电流
+            this.syy.setDataFromMainForm(u.ToString(),a.ToString());
         }
     }
 }

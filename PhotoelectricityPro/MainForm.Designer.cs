@@ -51,7 +51,7 @@
             // mainLab
             // 
             this.mainLab.AutoSize = true;
-            this.mainLab.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.mainLab.Font = new System.Drawing.Font("SimSun", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.mainLab.Location = new System.Drawing.Point(507, 7);
             this.mainLab.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.mainLab.Name = "mainLab";
@@ -65,7 +65,7 @@
             // 
             // mainButtStart
             // 
-            this.mainButtStart.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.mainButtStart.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.mainButtStart.Location = new System.Drawing.Point(511, 26);
             this.mainButtStart.Margin = new System.Windows.Forms.Padding(2);
             this.mainButtStart.Name = "mainButtStart";
@@ -77,8 +77,8 @@
             // 
             // mainButtEnd
             // 
-            this.mainButtEnd.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.mainButtEnd.Location = new System.Drawing.Point(578, 29);
+            this.mainButtEnd.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.mainButtEnd.Location = new System.Drawing.Point(578, 30);
             this.mainButtEnd.Margin = new System.Windows.Forms.Padding(2);
             this.mainButtEnd.Name = "mainButtEnd";
             this.mainButtEnd.Size = new System.Drawing.Size(65, 25);
@@ -98,7 +98,7 @@
             // 
             // mainButtIntro
             // 
-            this.mainButtIntro.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.mainButtIntro.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.mainButtIntro.Location = new System.Drawing.Point(406, 26);
             this.mainButtIntro.Margin = new System.Windows.Forms.Padding(2);
             this.mainButtIntro.Name = "mainButtIntro";
@@ -145,7 +145,7 @@
             // 
             this.MainLable1.AutoSize = true;
             this.MainLable1.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.MainLable1.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.MainLable1.Font = new System.Drawing.Font("SimSun", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.MainLable1.ForeColor = System.Drawing.Color.Red;
             this.MainLable1.Location = new System.Drawing.Point(48, 381);
             this.MainLable1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -158,27 +158,27 @@
             // 
             this.MainLabel2.AutoSize = true;
             this.MainLabel2.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.MainLabel2.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.MainLabel2.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.MainLabel2.ForeColor = System.Drawing.Color.Red;
-            this.MainLabel2.Location = new System.Drawing.Point(523, 381);
+            this.MainLabel2.Location = new System.Drawing.Point(523, 386);
             this.MainLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.MainLabel2.Name = "MainLabel2";
-            this.MainLabel2.Size = new System.Drawing.Size(58, 21);
+            this.MainLabel2.Size = new System.Drawing.Size(53, 16);
             this.MainLabel2.TabIndex = 8;
-            this.MainLabel2.Text = "0000";
+            this.MainLabel2.Text = "0.000";
             // 
             // MainLabel3
             // 
             this.MainLabel3.AutoSize = true;
             this.MainLabel3.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.MainLabel3.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.MainLabel3.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.MainLabel3.ForeColor = System.Drawing.Color.Red;
-            this.MainLabel3.Location = new System.Drawing.Point(585, 381);
+            this.MainLabel3.Location = new System.Drawing.Point(590, 385);
             this.MainLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.MainLabel3.Name = "MainLabel3";
-            this.MainLabel3.Size = new System.Drawing.Size(58, 21);
+            this.MainLabel3.Size = new System.Drawing.Size(53, 16);
             this.MainLabel3.TabIndex = 9;
-            this.MainLabel3.Text = "0000";
+            this.MainLabel3.Text = "0.000";
             // 
             // mainForm
             // 
@@ -198,7 +198,7 @@
             this.Controls.Add(this.mainButtStart);
             this.Controls.Add(this.mainLab);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.Font = new System.Drawing.Font("宋体", 7.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Font = new System.Drawing.Font("SimSun", 7.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.HelpButton = true;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;

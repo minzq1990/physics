@@ -36,6 +36,8 @@
             this.SyyLableJia = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.SyyBuShou = new System.Windows.Forms.Button();
+            this.SyyBuZi = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,23 +55,23 @@
             // 
             this.SyyLabe2.AutoSize = true;
             this.SyyLabe2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.SyyLabe2.Font = new System.Drawing.Font("黑体", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.SyyLabe2.Font = new System.Drawing.Font("SimHei", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.SyyLabe2.Location = new System.Drawing.Point(346, 233);
             this.SyyLabe2.Name = "SyyLabe2";
-            this.SyyLabe2.Size = new System.Drawing.Size(73, 29);
+            this.SyyLabe2.Size = new System.Drawing.Size(70, 24);
             this.SyyLabe2.TabIndex = 1;
-            this.SyyLabe2.Text = "0000";
+            this.SyyLabe2.Text = "0.000";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label1.Font = new System.Drawing.Font("黑体", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Font = new System.Drawing.Font("SimHei", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.Location = new System.Drawing.Point(165, 233);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 29);
+            this.label1.Size = new System.Drawing.Size(70, 24);
             this.label1.TabIndex = 1;
-            this.label1.Text = "0000";
+            this.label1.Text = "0.000";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // SyyLabeJian
@@ -99,7 +101,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Silver;
-            this.label2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(425, 233);
             this.label2.Name = "label2";
@@ -112,7 +114,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Silver;
-            this.label3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(245, 233);
             this.label3.Name = "label3";
@@ -120,12 +122,38 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "V";
             // 
+            // SyyBuShou
+            // 
+            this.SyyBuShou.Font = new System.Drawing.Font("SimSun", 7.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.SyyBuShou.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.SyyBuShou.Location = new System.Drawing.Point(215, 316);
+            this.SyyBuShou.Name = "SyyBuShou";
+            this.SyyBuShou.Size = new System.Drawing.Size(58, 23);
+            this.SyyBuShou.TabIndex = 6;
+            this.SyyBuShou.Text = "手动模式";
+            this.SyyBuShou.UseVisualStyleBackColor = true;
+            this.SyyBuShou.Click += new System.EventHandler(this.SyyBuShou_Click);
+            // 
+            // SyyBuZi
+            // 
+            this.SyyBuZi.Font = new System.Drawing.Font("SimSun", 7.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.SyyBuZi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.SyyBuZi.Location = new System.Drawing.Point(294, 316);
+            this.SyyBuZi.Name = "SyyBuZi";
+            this.SyyBuZi.Size = new System.Drawing.Size(56, 23);
+            this.SyyBuZi.TabIndex = 6;
+            this.SyyBuZi.Text = "自动模式";
+            this.SyyBuZi.UseVisualStyleBackColor = true;
+            this.SyyBuZi.Click += new System.EventHandler(this.SyyBuZi_Click);
+            // 
             // SYY
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(583, 435);
+            this.Controls.Add(this.SyyBuZi);
+            this.Controls.Add(this.SyyBuShou);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.SyyLableJia);
@@ -133,7 +161,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.SyyLabe2);
             this.Controls.Add(this.pictureBox1);
-            this.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.ForeColor = System.Drawing.Color.Red;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "SYY";
@@ -156,5 +184,7 @@
         private System.Windows.Forms.Label SyyLableJia;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button SyyBuShou;
+        private System.Windows.Forms.Button SyyBuZi;
     }
 }

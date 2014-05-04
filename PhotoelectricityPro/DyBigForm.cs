@@ -71,5 +71,51 @@ namespace PhotoelectricityPro
 
             mf.setMainLabel1(k);
         }
+
+        //电压表 调高电压值
+        private void DyLabelJia_Click(object sender, EventArgs e)
+        {
+            int i = Convert.ToInt32(this.DyLabe.Text);
+            int k = i + 1;
+             
+            if (k > 99) { k = 99; }
+            if (k < 10)
+            {
+                this.DyLabe.Text = "000" + k.ToString();
+            }
+            else
+            {
+                this.DyLabe.Text = "00" + k.ToString();
+            }
+
+            mf.setMainLabel1(k);
+          
+            
+        }
+        //电压表 调低电压值
+        private void label1_Click(object sender, EventArgs e)
+        {
+            int i = Convert.ToInt32(this.DyLabe.Text);
+            int k = i - 1;
+            SYY.K = k;
+            if (k > 99) { k = 99; }
+            if (k < 1) { k = 0; }
+            if (k < 10)
+            {
+                this.DyLabe.Text = "000" + k.ToString();
+            }
+            else
+            {
+                this.DyLabe.Text = "00" + k.ToString();
+            }
+
+            mf.setMainLabel1(k);
+          
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+           
+        }
     }
 }
