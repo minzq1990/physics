@@ -43,15 +43,15 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(72, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 12);
+            this.label1.Size = new System.Drawing.Size(65, 12);
             this.label1.TabIndex = 0;
-            this.label1.Text = "滤光片";
+            this.label1.Text = "滤光片波长";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(203, 40);
+            this.label2.Location = new System.Drawing.Point(210, 40);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 12);
             this.label2.TabIndex = 1;
@@ -108,6 +108,7 @@
             this.label6.Size = new System.Drawing.Size(41, 12);
             this.label6.TabIndex = 7;
             this.label6.Text = "label6";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // Result
             // 

@@ -50,7 +50,7 @@ namespace PhotoelectricityPro
         private void button4_Click(object sender, EventArgs e)
         {
             
-            filter.Show();
+            filter.ShowDialog();
         }
 
         private void pictureBox1_Click_2(object sender, EventArgs e)

@@ -41,11 +41,16 @@ namespace PhotoelectricityPro
             } else {
                 this.label5.Text = "自动测量";
             }
-            
-            this.label6.Text = mf.trueU.ToString();
+            double db = (((this.mf.trueU) * 1000 - 5) / 1000); 
+            this.label6.Text = db.ToString();
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
         {
 
         }
