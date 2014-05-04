@@ -18,7 +18,6 @@ namespace PhotoelectricityPro
         public double trueU = 0;
         public TestEquipment te = null;//测试仪器大图
         
-        
         public double[,] inputUAndV = new Double[5, 5] {  //截止频率与入射光波频率关系
                                         //波长  频率    截止电压（手动）  截止电压（自动）         电流（自己瞎填写的）
                                         {365,   8.214,  1.824 + 0.005,          1.822 + 0.005,                  0.921},
@@ -29,6 +28,7 @@ namespace PhotoelectricityPro
                                     };
         public string DYNumber = ""; //电源的示数
         public int modelFlag = -1 ; //实验的模式
+        public int pictureIndex = -1;
         public mainForm()
         {
             InitializeComponent();
@@ -142,10 +142,32 @@ namespace PhotoelectricityPro
             //this.MainLabel2.Text = picIndex.ToString();
             double u = this.inputUAndV[picIndex - 1,2];
             double a = this.inputUAndV[picIndex-1,4];
-            this.trueU = u; 
+            this.trueU = u;
+            this.pictureIndex = picIndex;
             this.MainLabel2.Text = u.ToString(); //主窗口显示电压值
             this.MainLabel3.Text = a.ToString();//主窗口显示电流
             this.syy.setDataFromMainForm(u.ToString(),a.ToString());
+        }
+
+        private void getResult_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void getResult_Click_1(object sender, EventArgs e)
+        {
+            Result result = new Result(this);
+            //显示结果
+            result.ShowDialog();
+        }
+
+        public Button getGetResult() {
+            return getResult;
+        }
+
+        private void MainLabel2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -80,3 +80,4 @@ D:\git\physics\PhotoelectricityPro\obj\x86\Debug\PhotoelectricityPro.SYY.resourc
 D:\git\physics\PhotoelectricityPro\obj\x86\Debug\PhotoelectricityPro.TestEquipment.resources
 D:\git\physics\PhotoelectricityPro\obj\x86\Debug\PhotoelectricityPro.csproj.GenerateResource.Cache
 E:\physics\physics_one\physics\physics\PhotoelectricityPro\obj\x86\Debug\PhotoelectricityPro.csprojResolveAssemblyReference.cache
+E:\physics\physics_one\physics\physics\PhotoelectricityPro\obj\x86\Debug\PhotoelectricityPro.Result.resources

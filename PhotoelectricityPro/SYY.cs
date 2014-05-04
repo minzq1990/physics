@@ -64,6 +64,8 @@ namespace PhotoelectricityPro
                 this.mf.setMainLabel2 (isTrueU); //电压表
                 this.mf.setMainLablel3("0.000");
                 MessageBox.Show("电流表已经调到零A");
+                Button getResult = this.mf.getGetResult();
+                getResult.Visible = true;
                 return;
             }
             

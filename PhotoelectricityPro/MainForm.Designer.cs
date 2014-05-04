@@ -43,6 +43,7 @@
             this.MainLable1 = new System.Windows.Forms.Label();
             this.MainLabel2 = new System.Windows.Forms.Label();
             this.MainLabel3 = new System.Windows.Forms.Label();
+            this.getResult = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -51,11 +52,11 @@
             // mainLab
             // 
             this.mainLab.AutoSize = true;
-            this.mainLab.Font = new System.Drawing.Font("SimSun", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.mainLab.Location = new System.Drawing.Point(507, 7);
+            this.mainLab.Font = new System.Drawing.Font("宋体", 12F);
+            this.mainLab.Location = new System.Drawing.Point(11, 9);
             this.mainLab.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.mainLab.Name = "mainLab";
-            this.mainLab.Size = new System.Drawing.Size(57, 19);
+            this.mainLab.Size = new System.Drawing.Size(48, 16);
             this.mainLab.TabIndex = 0;
             this.mainLab.Text = "时间:";
             // 
@@ -65,11 +66,11 @@
             // 
             // mainButtStart
             // 
-            this.mainButtStart.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.mainButtStart.Location = new System.Drawing.Point(511, 26);
+            this.mainButtStart.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.mainButtStart.Location = new System.Drawing.Point(595, 6);
             this.mainButtStart.Margin = new System.Windows.Forms.Padding(2);
             this.mainButtStart.Name = "mainButtStart";
-            this.mainButtStart.Size = new System.Drawing.Size(53, 29);
+            this.mainButtStart.Size = new System.Drawing.Size(75, 23);
             this.mainButtStart.TabIndex = 1;
             this.mainButtStart.Text = "开始";
             this.mainButtStart.UseVisualStyleBackColor = true;
@@ -77,11 +78,11 @@
             // 
             // mainButtEnd
             // 
-            this.mainButtEnd.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.mainButtEnd.Location = new System.Drawing.Point(578, 30);
+            this.mainButtEnd.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.mainButtEnd.Location = new System.Drawing.Point(674, 6);
             this.mainButtEnd.Margin = new System.Windows.Forms.Padding(2);
             this.mainButtEnd.Name = "mainButtEnd";
-            this.mainButtEnd.Size = new System.Drawing.Size(65, 25);
+            this.mainButtEnd.Size = new System.Drawing.Size(75, 23);
             this.mainButtEnd.TabIndex = 1;
             this.mainButtEnd.Text = "结束";
             this.mainButtEnd.UseVisualStyleBackColor = true;
@@ -98,11 +99,11 @@
             // 
             // mainButtIntro
             // 
-            this.mainButtIntro.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.mainButtIntro.Location = new System.Drawing.Point(406, 26);
+            this.mainButtIntro.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.mainButtIntro.Location = new System.Drawing.Point(491, 6);
             this.mainButtIntro.Margin = new System.Windows.Forms.Padding(2);
             this.mainButtIntro.Name = "mainButtIntro";
-            this.mainButtIntro.Size = new System.Drawing.Size(86, 29);
+            this.mainButtIntro.Size = new System.Drawing.Size(100, 23);
             this.mainButtIntro.TabIndex = 3;
             this.mainButtIntro.Text = "试验说明";
             this.mainButtIntro.UseVisualStyleBackColor = true;
@@ -111,7 +112,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(462, 344);
+            this.pictureBox1.Location = new System.Drawing.Point(516, 341);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(204, 88);
@@ -122,7 +123,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::PhotoelectricityPro.Properties.Resources.缩小的套装;
-            this.pictureBox2.Location = new System.Drawing.Point(203, 71);
+            this.pictureBox2.Location = new System.Drawing.Point(255, 56);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(236, 202);
@@ -145,7 +146,7 @@
             // 
             this.MainLable1.AutoSize = true;
             this.MainLable1.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.MainLable1.Font = new System.Drawing.Font("SimSun", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.MainLable1.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.MainLable1.ForeColor = System.Drawing.Color.Red;
             this.MainLable1.Location = new System.Drawing.Point(48, 381);
             this.MainLable1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -158,27 +159,40 @@
             // 
             this.MainLabel2.AutoSize = true;
             this.MainLabel2.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.MainLabel2.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.MainLabel2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.MainLabel2.ForeColor = System.Drawing.Color.Red;
-            this.MainLabel2.Location = new System.Drawing.Point(523, 386);
+            this.MainLabel2.Location = new System.Drawing.Point(575, 381);
             this.MainLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.MainLabel2.Name = "MainLabel2";
             this.MainLabel2.Size = new System.Drawing.Size(53, 16);
             this.MainLabel2.TabIndex = 8;
             this.MainLabel2.Text = "0.000";
+            this.MainLabel2.Click += new System.EventHandler(this.MainLabel2_Click);
             // 
             // MainLabel3
             // 
             this.MainLabel3.AutoSize = true;
             this.MainLabel3.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.MainLabel3.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.MainLabel3.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.MainLabel3.ForeColor = System.Drawing.Color.Red;
-            this.MainLabel3.Location = new System.Drawing.Point(590, 385);
+            this.MainLabel3.Location = new System.Drawing.Point(647, 381);
             this.MainLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.MainLabel3.Name = "MainLabel3";
             this.MainLabel3.Size = new System.Drawing.Size(53, 16);
             this.MainLabel3.TabIndex = 9;
             this.MainLabel3.Text = "0.000";
+            // 
+            // getResult
+            // 
+            this.getResult.Font = new System.Drawing.Font("宋体", 12F);
+            this.getResult.Location = new System.Drawing.Point(360, 6);
+            this.getResult.Name = "getResult";
+            this.getResult.Size = new System.Drawing.Size(126, 23);
+            this.getResult.TabIndex = 10;
+            this.getResult.Text = "显示测试结果";
+            this.getResult.UseVisualStyleBackColor = true;
+            this.getResult.Visible = false;
+            this.getResult.Click += new System.EventHandler(this.getResult_Click_1);
             // 
             // mainForm
             // 
@@ -186,6 +200,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(773, 480);
+            this.Controls.Add(this.getResult);
             this.Controls.Add(this.MainLabel3);
             this.Controls.Add(this.MainLabel2);
             this.Controls.Add(this.MainLable1);
@@ -198,7 +213,7 @@
             this.Controls.Add(this.mainButtStart);
             this.Controls.Add(this.mainLab);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.Font = new System.Drawing.Font("SimSun", 7.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Font = new System.Drawing.Font("宋体", 7.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.HelpButton = true;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
@@ -230,5 +245,6 @@
         private System.Windows.Forms.Label MainLable1;
         private System.Windows.Forms.Label MainLabel2;
         private System.Windows.Forms.Label MainLabel3;
+        private System.Windows.Forms.Button getResult;
     }
 }
