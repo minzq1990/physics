@@ -17,7 +17,16 @@ namespace PhotoelectricityPro
         public Filter fi = null; //滤光片大图
         public double trueU = 0;
         public TestEquipment te = null;//测试仪器大图
-        
+
+        int startX;     //获取鼠标起始点的X坐标
+        int startY;    //获取鼠标起始点的Y坐标
+        Graphics g;  //定义Graphics对象实例
+
+        bool flag = false;//是否按下点击
+        Point pp = new Point(100, 20);//鼠标释放时的点
+        bool flagmove = false;//是否可以移动后重画
+        int mm = 0;//确定鼠标单击后是否还重画0不重画1重画
+
         public double[,] inputUAndV = new Double[5, 5] {  //截止频率与入射光波频率关系
                                         //波长  频率    截止电压（手动）  截止电压（自动）         电流（自己瞎填写的）
                                         {365,   8.214,  1.824 + 0.005,          1.822 + 0.005,                  0.921},
@@ -69,6 +78,28 @@ namespace PhotoelectricityPro
             //给变量 电源值赋值
             this.DYNumber = this.MainLable1.Text;
            
+        }
+
+        private void mainForm_MouseMove(object sender, MouseEventArgs e)
+        {
+            //g = this.CreateGraphics();               //创建Graphics对象实例
+            //Pen p = new Pen(Color.Red, 4);      //设置画笔颜色和宽度
+            //g.DrawLine(p, startX, startY, e.X, e.Y);  //绘制直线
+
+        }
+
+        private void mainForm_MouseDown(object sender, MouseEventArgs e)
+        {
+            startX = e.X;       //为变量赋值
+            startY = e.Y;
+        }
+
+        private void mainForm_MouseUp(object sender, MouseEventArgs e)
+        {
+            g = this.CreateGraphics();               //创建Graphics对象实例
+            Pen p = new Pen(Color.Red, 4);      //设置画笔颜色和宽度
+            g.DrawLine(p, startX, startY, e.X, e.Y);  //绘制直线
+   
         }
 
         //设置主页面 试验仪的电压值
@@ -130,6 +161,34 @@ namespace PhotoelectricityPro
             te.Show();
         }
 
+        private void pictureBox2_MouseDown(object sender, MouseEventArgs e)
+        {
+            startX = e.X;       //为变量赋值
+            startY = e.Y;
+        }
+
+        private void pictureBox2_MouseUp(object sender, MouseEventArgs e)
+        {
+            g = this.CreateGraphics();               //创建Graphics对象实例
+            Pen p = new Pen(Color.Red, 4);      //设置画笔颜色和宽度
+            g.DrawLine(p, startX, startY, e.X, e.Y);  //绘制直线
+
+        }
+
+        private void pictureBox3_MouseDown(object sender, MouseEventArgs e)
+        {
+            startX = e.X;       //为变量赋值
+            startY = e.Y;
+        }
+
+        private void pictureBox3_MouseUp(object sender, MouseEventArgs e)
+        {
+            g = this.CreateGraphics();               //创建Graphics对象实例
+            Pen p = new Pen(Color.Red, 4);      //设置画笔颜色和宽度
+            g.DrawLine(p, startX, startY, e.X, e.Y);  //绘制直线
+
+        }
+
         //实验模式赋值
         public void setModeFlag(int flag) {
             this.modelFlag = flag;
@@ -166,6 +225,11 @@ namespace PhotoelectricityPro
         }
 
         private void MainLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }

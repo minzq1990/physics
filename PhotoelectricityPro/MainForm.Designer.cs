@@ -44,6 +44,8 @@
             this.MainLabel2 = new System.Windows.Forms.Label();
             this.MainLabel3 = new System.Windows.Forms.Label();
             this.getResult = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -130,6 +132,8 @@
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.pictureBox2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox2_MouseDown);
+            this.pictureBox2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox2_MouseUp);
             // 
             // pictureBox3
             // 
@@ -141,6 +145,8 @@
             this.pictureBox3.TabIndex = 6;
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click_1);
+            this.pictureBox3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox3_MouseDown);
+            this.pictureBox3.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox3_MouseUp);
             // 
             // MainLable1
             // 
@@ -194,12 +200,33 @@
             this.getResult.Visible = false;
             this.getResult.Click += new System.EventHandler(this.getResult_Click_1);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(177, 444);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(10, 10);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "+";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(283, 152);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(10, 10);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "+";
+            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 10F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(773, 480);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.getResult);
             this.Controls.Add(this.MainLabel3);
             this.Controls.Add(this.MainLabel2);
@@ -222,6 +249,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "光电效应试验";
             this.Load += new System.EventHandler(this.mainForm_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mainForm_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.mainForm_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.mainForm_MouseUp);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -246,5 +276,7 @@
         private System.Windows.Forms.Label MainLabel2;
         private System.Windows.Forms.Label MainLabel3;
         private System.Windows.Forms.Button getResult;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
