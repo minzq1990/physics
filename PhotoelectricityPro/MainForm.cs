@@ -20,12 +20,9 @@ namespace PhotoelectricityPro
 
         int startX;     //获取鼠标起始点的X坐标
         int startY;    //获取鼠标起始点的Y坐标
+        int endX;
+        int endY;
         Graphics g;  //定义Graphics对象实例
-
-        bool flag = false;//是否按下点击
-        Point pp = new Point(100, 20);//鼠标释放时的点
-        bool flagmove = false;//是否可以移动后重画
-        int mm = 0;//确定鼠标单击后是否还重画0不重画1重画
 
         public double[,] inputUAndV = new Double[5, 5] {  //截止频率与入射光波频率关系
                                         //波长  频率    截止电压（手动）  截止电压（自动）         电流（自己瞎填写的）
@@ -90,15 +87,15 @@ namespace PhotoelectricityPro
 
         private void mainForm_MouseDown(object sender, MouseEventArgs e)
         {
-            startX = e.X;       //为变量赋值
-            startY = e.Y;
+           // startX = e.X;       //为变量赋值
+           // startY = e.Y;
         }
 
         private void mainForm_MouseUp(object sender, MouseEventArgs e)
         {
-            g = this.CreateGraphics();               //创建Graphics对象实例
-            Pen p = new Pen(Color.Red, 4);      //设置画笔颜色和宽度
-            g.DrawLine(p, startX, startY, e.X, e.Y);  //绘制直线
+          //  g = this.CreateGraphics();               //创建Graphics对象实例
+         //   Pen p = new Pen(Color.Red, 4);      //设置画笔颜色和宽度
+          //  g.DrawLine(p, startX, startY, e.X, e.Y);  //绘制直线
    
         }
 
@@ -163,29 +160,29 @@ namespace PhotoelectricityPro
 
         private void pictureBox2_MouseDown(object sender, MouseEventArgs e)
         {
-            startX = e.X;       //为变量赋值
-            startY = e.Y;
+           // startX = e.X;       //为变量赋值
+          //  startY = e.Y;
         }
 
         private void pictureBox2_MouseUp(object sender, MouseEventArgs e)
         {
-            g = this.CreateGraphics();               //创建Graphics对象实例
-            Pen p = new Pen(Color.Red, 4);      //设置画笔颜色和宽度
-            g.DrawLine(p, startX, startY, e.X, e.Y);  //绘制直线
+           // g = this.CreateGraphics();               //创建Graphics对象实例
+          //  Pen p = new Pen(Color.Red, 4);      //设置画笔颜色和宽度
+           // g.DrawLine(p, startX, startY, e.X, e.Y);  //绘制直线
 
         }
 
         private void pictureBox3_MouseDown(object sender, MouseEventArgs e)
         {
-            startX = e.X;       //为变量赋值
-            startY = e.Y;
+          //  startX = e.X;       //为变量赋值
+           // startY = e.Y;
         }
 
         private void pictureBox3_MouseUp(object sender, MouseEventArgs e)
         {
-            g = this.CreateGraphics();               //创建Graphics对象实例
-            Pen p = new Pen(Color.Red, 4);      //设置画笔颜色和宽度
-            g.DrawLine(p, startX, startY, e.X, e.Y);  //绘制直线
+           // g = this.CreateGraphics();               //创建Graphics对象实例
+           // Pen p = new Pen(Color.Red, 4);      //设置画笔颜色和宽度
+           // g.DrawLine(p, startX, startY, e.X, e.Y);  //绘制直线
 
         }
 
@@ -231,7 +228,62 @@ namespace PhotoelectricityPro
 
         private void label2_Click(object sender, EventArgs e)
         {
+            startX = 141;       //为变量赋值
+            startY = 310;
+        }
 
+        private void label4_Click(object sender, EventArgs e)
+        {
+            startX = 96;       //为变量赋值
+            startY = 310;
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            endX = 240;       //为变量赋值
+            endY = 131;
+            g = this.CreateGraphics();               //创建Graphics对象实例
+            Pen p = new Pen(Color.Red, 4);      //设置画笔颜色和宽度
+            g.DrawLine(p, startX, startY, endX, endY);  //绘制直线
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            endX = 240;       //为变量赋值
+            endY = 177;
+            g = this.CreateGraphics();               //创建Graphics对象实例
+            Pen p = new Pen(Color.Red, 4);      //设置画笔颜色和宽度
+            g.DrawLine(p, startX, startY, endX, endY);  //绘制直线
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            startX = 497;       //为变量赋值
+            startY = 131;
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+            endX = 630;       //为变量赋值
+            endY = 322;
+            g = this.CreateGraphics();               //创建Graphics对象实例
+            Pen p = new Pen(Color.Red, 4);      //设置画笔颜色和宽度
+            g.DrawLine(p, startX, startY, endX, endY);  //绘制直线
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            startX = 499;       //为变量赋值
+            startY = 177;
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            endX = 558;       //为变量赋值
+            endY = 322;
+            g = this.CreateGraphics();               //创建Graphics对象实例
+            Pen p = new Pen(Color.Red, 4);      //设置画笔颜色和宽度
+            g.DrawLine(p, startX, startY, endX, endY);  //绘制直线
         }
     }
 }
