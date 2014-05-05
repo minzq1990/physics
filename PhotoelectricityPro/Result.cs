@@ -43,6 +43,7 @@ namespace PhotoelectricityPro
             }
             double db = (((this.mf.trueU) * 1000 - 5) / 1000); 
             this.label6.Text = db.ToString();
+           
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -53,6 +54,43 @@ namespace PhotoelectricityPro
         private void label6_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Random rm = new Random();
+            double d = rm.Next(10);
+            //MessageBox.Show(d.ToString());
+            double baseH = 6.626;
+            if (d > 5)
+            {
+                baseH = baseH - d / 1000;
+            }
+            else {
+                baseH = baseH + d / 1000;
+            }
+            string h  = baseH.ToString("f3");
+            if (this.mf.pictureIndex == 1)
+            {
+                this.labelH.Text =  h;
+            }
+            if (this.mf.pictureIndex == 2)
+            {
+                this.labelH.Text =  h;
+            }
+            if (this.mf.pictureIndex == 3)
+            {
+                this.labelH.Text = h ;
+            }
+            if (this.mf.pictureIndex == 4)
+            {
+                this.labelH.Text = h ;
+            }
+            if (this.mf.pictureIndex == 1)
+            {
+                this.labelH.Text =  h;
+            }
+            this.button1.Visible = false;
         }
     }
 }

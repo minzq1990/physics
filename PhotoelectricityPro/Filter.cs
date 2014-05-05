@@ -33,6 +33,7 @@ namespace PhotoelectricityPro
             this.picFlag = 1;
             MessageBox.Show("滤光片已经选择成功，请调试测试仪");
             this.setPicIndexMainForm(this.picFlag);
+            this.Close();
         }
         //pic2
         private void pic2_Click(object sender, EventArgs e)

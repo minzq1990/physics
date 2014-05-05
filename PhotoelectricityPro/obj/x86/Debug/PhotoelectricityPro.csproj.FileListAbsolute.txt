@@ -97,3 +97,4 @@ D:\git\Git\physics\PhotoelectricityPro\obj\x86\Debug\PhotoelectricityPro.SYY.res
 D:\git\Git\physics\PhotoelectricityPro\obj\x86\Debug\PhotoelectricityPro.TestEquipment.resources
 D:\git\Git\physics\PhotoelectricityPro\obj\x86\Debug\GenerateResource.read.1.tlog
 D:\git\Git\physics\PhotoelectricityPro\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\git\physics\PhotoelectricityPro\obj\x86\Debug\PhotoelectricityPro.Result.resources
